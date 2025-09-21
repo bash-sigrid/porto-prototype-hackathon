@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação de Cargas - Porto de Santos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Identificação de Cargas - QR Code</h1>
+        <div class="qr-code-section">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.portodesantos.com.br/documentacao" alt="QR Code para Documentação">
+            <p>Acesse a documentação do porto.</p>
+        </div>
+    </header>
+
+    <form id="cadastroForm">
+        <section class="cadastro-cargas">
+            <div class="cadastro-form">
+                <div>
+                    <label for="codigoCarga">Código da Carga:</label>
+                    <input type="text" id="codigoCarga" name="codigo">
+                </div>
+                <div>
+                    <label for="descricao">Descrição:</label>
+                    <input type="text" id="descricao" name="descricao">
+                </div>
+                <div>
+                    <label for="navio">Navio:</label>
+                    <input type="text" id="navio" name="navio">
+                </div>
+                <div>
+                    <label for="dataChegada">Data de Chegada:</label>
+                    <input type="text" id="dataChegada" name="dataChegada" placeholder="dd/mm/aaaa">
+                </div>
+                <button type="submit">Adicionar Carga</button>
+            </div>
+        </section>
+    </form>
+
+    <section class="cargas-cadastradas">
+        <h2>Cargas cadastradas</h2>
+        <table class="cargas-table">
+            <thead>
+            <tr>
+                <th>Código</th>
+                <th>Descrição</th>
+                <th>Navio</th>
+                <th>Data de Chegada</th>
+                <th>QR Code</th>
+            </tr>
+            </thead>
+            <tbody id="listaCargas">
+            <tr>
+                <td>12345</td>
+                <td>Conteiner de eletrônicos</td>
+                <td>MSC Gema</td>
+                <td>21/09/2025</td>
+                <td><img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=12345" alt="QR Code"></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+<script src="carga.js"></script>
+
+</body>
+</html>

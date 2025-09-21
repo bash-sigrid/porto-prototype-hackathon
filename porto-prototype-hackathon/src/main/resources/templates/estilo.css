@@ -1,0 +1,134 @@
+/* Importação da fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #005691;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #005691;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+/* Estilo para o formulário de cadastro */
+.cadastro-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.cadastro-form div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+}
+
+.cadastro-form label {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.cadastro-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.cadastro-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.cadastro-form button:hover {
+    background-color: #005691;
+}
+
+/* Tabela de cargas cadastradas */
+h2 {
+    color: #333;
+    font-size: 1.5em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.cargas-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+}
+
+.cargas-table th, .cargas-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cargas-table th {
+    background-color: #005691;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+/* Estilização para o QR Code */
+.qr-code-section {
+    text-align: right;
+}
+
+.qr-code-section p {
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 10px;
+}
+
+.qr-code-section img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+}

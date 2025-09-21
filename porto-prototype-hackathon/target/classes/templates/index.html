@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação de Cargas - Porto de Santos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Identificação de Cargas - QR Code</h1>
+        <div class="qr-code-section">
+            <img src="https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=https://www.portodesantos.com.br/documentacao" alt="QR Code para Documentação">
+            <p>Acesse a documentação do porto.</p>
+        </div>
+    </header>
+
+    <section class="cadastro-cargas">
+        <div class="cadastro-form">
+            <div>
+                <label for="codigoCarga">Código da Carga:</label>
+                <input type="text" id="codigoCarga">
+            </div>
+            <div>
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao">
+            </div>
+            <div>
+                <label for="navio">Navio:</label>
+                <input type="text" id="navio">
+            </div>
+            <div>
+                <label for="dataChegada">Data de Chegada:</label>
+                <input type="text" id="dataChegada" placeholder="dd/mm/aaaa">
+            </div>
+            <button type="submit">Adicionar Carga</button>
+        </div>
+    </section>
+
+    <section class="cargas-cadastradas">
+        <h2>Cargas cadastradas</h2>
+        <table class="cargas-table">
+            <thead>
+            <tr>
+                <th>Código</th>
+                <th>Descrição</th>
+                <th>Navio</th>
+                <th>Data de Chegada</th>
+                <th>QR Code</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>12345</td>
+                <td>Conteiner de eletrônicos</td>
+                <td>MSC Gema</td>
+                <td>21/09/2025</td>
+                <td><img src="https://chart.googleapis.com/chart?cht=qr&chs=50x50&chl=12345" alt="QR Code"></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+</body>
+</html>

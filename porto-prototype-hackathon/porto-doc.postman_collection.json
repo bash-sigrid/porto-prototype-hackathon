@@ -1,0 +1,77 @@
+{
+  "info": {
+    "name": "Porto Doc API",
+    "_postman_id": "12345-abcde",
+    "description": "Cole\u00e7\u00e3o de testes para a API de Cargas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Listar Cargas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/cargas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "cargas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Criar Carga",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"descricao\": \"Carga Teste\",\n  \"peso\": 150.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/cargas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "cargas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Deletar Carga",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/cargas/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "cargas",
+            "1"
+          ]
+        }
+      }
+    }
+  ]
+}
